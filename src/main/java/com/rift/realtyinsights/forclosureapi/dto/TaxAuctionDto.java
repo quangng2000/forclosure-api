@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,14 +23,15 @@ public class TaxAuctionDto {
     private String owner;
     private Integer assessment2023;
     private String halfBaths;
-    private String[] geoCode;
+    //private String[] geoCode;
     private String landUse;
     private Integer basementSqFt;
     private String mailingAddress;
     private Integer yearBuilt;
     private Integer finishedBasementSqFt;
     private String taxUnit;
-    
+    private double longitude;
+    private double latitude;
     private String basementType;
     private String architecturalStyle;
     private String condition;
@@ -38,14 +40,9 @@ public class TaxAuctionDto {
     private String ain;
     private String ownersOfRecord;
     private String fullBaths;
-    
-    
     private float  redemptionCosts;
-    
     private Integer livingSqFt;
-    
     private String pin;
-    
     private String bedrooms;
     private String marketLandSquareFeet;
     private String totalAcres2023;

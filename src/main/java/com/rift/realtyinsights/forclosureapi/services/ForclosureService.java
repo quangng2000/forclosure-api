@@ -1,6 +1,7 @@
 package com.rift.realtyinsights.forclosureapi.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,6 +18,12 @@ public class ForclosureService {
 	public List<TaxAuctionDto> getForclosure() {
 		return repo.findAll();
 	}
+	
+	public TaxAuctionDto getForclosure(Long id) {
+		Optional<TaxAuctionDto> optionalTaxAuction = repo.findById(id);
+		return optionalTaxAuction.get();
+	}
+	
 	
 	
 }
