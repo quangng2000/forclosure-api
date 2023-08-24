@@ -12,4 +12,4 @@ else
 fi
 
 
--c "nohup java -jar target/forclosure-api-0.0.1-SNAPSHOT.jar &"
+java -jar target/forclosure-api-0.0.1-SNAPSHOT.jar &
