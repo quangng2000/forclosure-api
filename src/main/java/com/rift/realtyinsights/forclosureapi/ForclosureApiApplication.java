@@ -8,7 +8,6 @@ import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties
 
 @SpringBootApplication
 @EnableEncryptableProperties
-@CrossOrigin(origins = "*")
 public class ForclosureApiApplication {
 
 	public static void main(String[] args) {
